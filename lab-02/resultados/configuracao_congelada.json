@@ -1,0 +1,69 @@
+{
+  "modelo": "criar_modelo(11, batchnorm=False): 11 -> 16 -> 1, ReLU, saída logit",
+  "treino": {
+    "max_epocas": 100,
+    "paciencia": 10,
+    "min_delta": 0.0001,
+    "lr": 0.001,
+    "otimizador": "Adam",
+    "perda": "BCEWithLogitsLoss sem ponderação",
+    "lote": 64,
+    "semente": 42,
+    "melhor_epoca": 47,
+    "epoca_final": 57,
+    "melhor_perda_validacao": 0.26885076288907034
+  },
+  "entradas": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "normalizacao": {
+    "origem": "treino principal (961 linhas), ddof=0",
+    "media": [
+      8.29573361082206,
+      0.5224037460978147,
+      0.2706867845993756,
+      2.543080124869927,
+      0.08767325702393339,
+      15.454734651404786,
+      45.75234131113424,
+      0.9966778772112383,
+      3.309063475546306,
+      0.6606139438085327,
+      10.432032604925427
+    ],
+    "desvio": [
+      1.7030096721994752,
+      0.18085355878671855,
+      0.19176150076600246,
+      1.4018742036509564,
+      0.04744495033055027,
+      10.174148595505665,
+      32.87118232909871,
+      0.0018672607518533657,
+      0.14944140572146658,
+      0.16799093731177783,
+      1.0811622294128063
+    ]
+  },
+  "custos": {
+    "C_FP": 1,
+    "C_FN": 4,
+    "unidade": "unidade de custo (1 = custo de uma análise especial)"
+  },
+  "regra_decisao": "enviar se escore (sigmoide do logit) >= limiar",
+  "limiar_escolhido": 0.2562195658683777,
+  "regra_desempate": "menor custo na validação; empate -> maior limiar",
+  "limiar_padrao": 0.5,
+  "limiar_formula_referencia": 0.2,
+  "impressao_pesos_sha256": "33a279cc52c5462d9bb448bbf05431d38bb64a312748c4a1d54326f386817f34"
+}

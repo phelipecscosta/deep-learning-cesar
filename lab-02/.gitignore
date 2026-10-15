@@ -1,0 +1,12 @@
+# Ambiente virtual (não enviar: o enunciado proíbe e é recriável pelo requirements.txt)
+.venv/
+
+# Caches de Python e Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Configurações locais do editor e do sistema
+.vscode/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,3 @@
+# Nunca converter quebras de linha (LF/CRLF): preserva os arquivos byte a byte.
+# Necessário porque apoio.py verifica o SHA-256 do CSV; uma conversão faria o notebook falhar.
+* -text
