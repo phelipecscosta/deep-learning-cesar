@@ -2,7 +2,7 @@
 
 Nome: Phelipe Calado de Souza Costa
 Turma: Dados 4o Período (2026.2)
-Link do repositório: [preencher]
+Link do repositório: https://github.com/phelipecscosta/deep-learning-cesar/tree/main/lab-02
 
 Substitua os marcadores pelas suas medições e análises. Consulte ENUNCIADO.pdf para os requisitos integrais.
 
